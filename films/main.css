@@ -1,0 +1,63 @@
+body{
+    background-color:rgba(21, 43, 25, 0.918)
+}
+.header{
+    background-color:rgba(57, 134, 13, 0.452)
+}
+.header__title{
+    color:rgba(128, 8, 64, 0.596);
+    padding: 5px;
+}
+.header__title-orange{
+    /* background-color:orange; */
+    border-radius: 5px;
+}
+.films__input-serach{
+    background-color: rgba(21, 43, 25, 0.918);
+    margin-bottom: 10px;
+    border: none;
+}
+
+.films__btn-header{
+    background-color:rgba(98, 243, 41, 0.705);
+    border-radius: 5px;
+    border: none;
+}
+.films__btn-header:hover{
+    background-color:rgba(157, 245, 123, 0.705);
+}
+.films__filter{
+    background-color: rgba(25, 82, 35, 0.918);
+    margin-bottom: 10px;
+}
+.films__select{
+    background-color: rgba(25, 82, 35, 0.918);
+}
+.films__btn{
+    background-color:rgba(98, 243, 41, 0.705);
+    border: none;
+    border-radius: 8px ;
+}
+.films__btn:hover{
+    background-color:rgba(157, 245, 123, 0.705);
+
+}
+/* .form{
+    background-color:rgb(176, 198, 238)
+} */
+.films__card{
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    list-style-type: none;
+}
+.films__card{
+    width: 230px;
+    text-align: center;
+    background-color:rgba(35, 112, 4, 0.76);
+    border-radius: 10px;
+}
+.films__img{
+    padding-top: 10px;
+}

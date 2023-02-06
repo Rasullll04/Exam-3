@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="./main.css">
+    <title>IMOVIE</title>
+</head>
+<body>
+    
+    <header class="header">
+        <div class="container">
+            <h1 class="header__title">Uz<span class="header__title-orange">movie.com</span></h1>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="films">
+            <div class="container">
+                <form class="form">
+                    <input class="input films__input-serach col-8 rounded-top rounded-right rounded-bottom rounded-left" type="text" placeholder="Search film ..." >
+                    <button class="films__btn-header col-2">Search</button>
+                    <div class="films__filter-wrapper">
+                        <select class="input films__select col-4">
+                            <option class="films__option " value="All">All</option>
+                        </select>
+                        <select class="input films__filter col-4">
+                            <option class="films__option" value="All">All</option>
+                            <option class="films__option" value="a_z">A_Z</option>
+                            <option class="films__option" value="z_a">Z_A</option>
+                        </select>
+                    </div>
+                </form>
+                <ul class="films__card-wrapper d-flex flex-wrap gap-5"></ul>
+
+
+                <template id="template">
+                    <li class="films__card">
+                        <img class="films__img" src="https://picsum.photos/300" width="200" height="140"><h2 class="films__card-title">Shazam!</h2>
+                        <time class="films__release-date" datetime="1.01.2023">1.01.2023</time>
+                        <button class="films__btn">Show more</button>
+                    </li>
+                </template>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <h3 class="footer__copyright">&copy 2023</h3>
+        </div>
+    </footer>
+    
+    
+    <script src="./films.js"></script>
+    <script src="./util.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
