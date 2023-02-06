@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="./style.css">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrom</title>
+    <h1>Find Palindrom</h1>
+    <input type="text" id="input" oninput="getVal()">
+    <p id="text"></p>
+</head>
+
+<body>
+    <script>
+        const text = document.querySelector("#text")
+        function getVal() {
+            const val = document.querySelector('input').value;
+            if (val.charAt(0) == val.at(-1)) {
+                text.textContent = true
+            } else {
+                text.textContent = false
+            }
+            if (val == ''){
+                text.textContent =''
+            } 
+        }
+    </script>
+</body>
+
+</html>
